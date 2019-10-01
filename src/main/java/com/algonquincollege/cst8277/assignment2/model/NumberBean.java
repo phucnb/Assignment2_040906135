@@ -25,7 +25,7 @@ import javax.inject.Named;
 @ViewScoped
 @Entity
 @Table(name="users")
-public class User implements Serializable {
+public class NumberBean implements Serializable {
     /** explicit set serialVersionUID */
     private static final long serialVersionUID = 1L;
 
@@ -34,7 +34,7 @@ public class User implements Serializable {
     
 
     // JPA requires the default constructor be present
-    public User() {
+    public NumberBean() {
         super();    
     }
 

@@ -12,9 +12,6 @@
   >
 <f:loadBundle basename="Bundle" var="msg"/>
 
-<f:metadata>
-  <f:viewAction action="#{user.getId()}" /> <!-- TODO: action should cause Controller to load all Users -->
-</f:metadata>
 
 <h:head>
     <meta charset="utf-8" name="viewport"
@@ -50,10 +47,8 @@
             </div>
         </section>
     </header>
-    
-    <main role="main">
-    <p><h:outputText value="#{msg['filler']}"/></p>
-    </main>
+   <h1>#{1+1}</h1>#{numberBean.getId()} 
+
     
     <!-- footer has the link to go to the top of the page -->
     <footer class="text-muted">
